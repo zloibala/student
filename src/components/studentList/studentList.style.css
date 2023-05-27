@@ -6,12 +6,9 @@
 
 .container {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-.container {
-  padding: 2px 16px;
 }
 
 .card {
@@ -21,18 +18,15 @@
   flex-direction: column;
   flex-basis: 20%;
   background-color: black;
-  opacity: 0.6;
+
   border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  box-shadow: 5px 5px 10px 1px darkblue;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
 img {
   width: 60%;
-  height: 16rem;
+  height: 14rem;
+  border-radius: 300px;
 }
 p {
   color: white;
