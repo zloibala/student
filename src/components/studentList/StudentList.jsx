@@ -9,10 +9,9 @@ const StudentList = () => {
     return (
       <div className="card" key={index}>
         <img src={el.picture} />
-        <p>
-          {" "}
-          {el.hobby}, {el.name}{" "}
-        </p>
+        <p>{el.name}</p>
+        <p> Likes </p>
+        <p>{el.hobby} </p>
       </div>
     );
   });
