@@ -12,6 +12,7 @@ const StudentList = () => {
         <p>{el.name}</p>
         <p> Likes </p>
         <p>{el.hobby} </p>
+        <button> Click </button>
       </div>
     );
   });
