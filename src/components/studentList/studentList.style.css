@@ -26,12 +26,15 @@
 }
 
 img {
-  width: 80%;
-  height: 14rem;
-  border-radius: 300px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 150px;
 }
 p {
   color: white;
   margin-top: 4px;
   margin-bottom: 4px;
+}
+.p-text {
+  color: black;
 }

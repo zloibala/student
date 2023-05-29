@@ -1,10 +1,15 @@
-import "./background.style.css";
+// import "./background.style.css";
 import "./studentList.style.css";
 import { students } from "./studentData";
-
-import React from "react";
+import CustomButton from "../customButton/CustomButton";
+import React, { useState } from "react";
 
 const StudentList = () => {
+  const [isPopupShow, setisPopupShow] = useState(false);
+  const onClickButton = () => {
+    setisPopupShow(true);
+  };
+
   const showStudents = students.map((el, index) => {
     return (
       <div className="card" key={index}>
@@ -12,18 +17,18 @@ const StudentList = () => {
         <p>{el.name}</p>
         <p> Likes </p>
         <p>{el.hobby} </p>
-        <button> Click </button>
+        <CustomButton onClickButton={onClickButton} text="More Info" />
       </div>
     );
   });
 
   return (
     <div className="container">
-      {" "}
       {showStudents}
       <div class="space stars1"></div>
       <div class="space stars2"></div>
       <div class="space stars3"></div>
+      {isPopupShow && <p className="p-text"> modal is showing</p>}
     </div>
   );
 };
